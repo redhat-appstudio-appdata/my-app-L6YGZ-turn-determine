@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-qtuo
+  namespace: rhn-support-csears-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:8663ee976468c71e67693d26c80655a3defe455b1475233b31e77d59a5bf822d
+        name: my-python
+        resources: {}
+status: {}
