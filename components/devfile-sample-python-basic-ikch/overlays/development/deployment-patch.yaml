@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ikch
+  namespace: rhn-support-csears-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:2926507565890539d2d3872f5b74b32f7d69cb497e9ccdab12589e71cff85a2d
+        name: my-python
+        resources: {}
+status: {}
